@@ -1,0 +1,49 @@
+/* 
+YouTube creation by Pwint Mar Naing Win.
+2024-12
+*/
+p {
+  font-family: Roboto + Flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.video-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  width: 500px;
+  line-height: 26px;
+}
+
+.video-stats {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.video-author {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 20px;
+}
+
+.video-description {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  width: 500px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.apple-text {
+  margin-bottom: 50px;
+  font-size: 14px;
+  background-color: rgb(227, 65, 64);
+  color: white;
+  text-align: center;
+  padding: 10 10;
+}
+
+.span-text:hover {
+  text-decoration: underline;
+}

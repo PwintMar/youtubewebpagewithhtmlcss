@@ -1,0 +1,158 @@
+/* 
+YouTube creation by Pwint Mar Naing Win.
+2024-12
+*/
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 0.2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(207, 199, 199);
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-icon {
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.youtube-icon {
+  height: 30px;
+}
+
+.middle-section {
+  flex: 1; /*Stretch it to take up the remain space. */
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1; /*Stretch it to take up the remain space. */
+  height: 34px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 3px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  /*inside of element shadow : inset horizontal vertical blur */
+  width: 0;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 8px;
+}
+
+.search-button,
+.voice-button {
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 25px;
+  margin-top: 4px;
+}
+
+.voice-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+
+.voice-icon {
+  height: 21px;
+  margin-top: 4px;
+}
+
+.right-section {
+  width: 180px;
+  display: flex;
+  align-items: center; /*To align vertically*/
+  justify-content: space-between; /*Distribute items evenly across the horizontal space*/
+  margin-right: 20px;
+  flex-shrink: 0; /*prevent shrik when brower is shrik*/
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notification-icon {
+  height: 24px;
+}
+
+.notification-icon-container {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+}
+
+.current-profile-icon {
+  height: 30px;
+  border-radius: 16px;
+}
